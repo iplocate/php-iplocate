@@ -1,0 +1,66 @@
+{
+    "name": "iplocate/php-iplocate",
+    "description": "PHP client for the IPLocate.io geolocation API",
+    "type": "library",
+    "keywords": [
+        "ip",
+        "ip address",
+        "geolocation",
+        "ip to country",
+        "ip to city",
+        "geoip",
+        "vpn",
+        "proxy",
+        "threat",
+        "intelligence"
+    ],
+    "homepage": "https://iplocate.io",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "IPLocate",
+            "email": "support@iplocate.io",
+            "homepage": "https://iplocate.io"
+        }
+    ],
+    "support": {
+        "email": "support@iplocate.io",
+        "docs": "https://iplocate.io/docs",
+        "issues": "https://github.com/iplocate/php-iplocate/issues",
+        "source": "https://github.com/iplocate/php-iplocate"
+    },
+    "require": {
+        "php": "^8.0",
+        "guzzlehttp/guzzle": "^7.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.0.0 || ^10.0.0 || ^11.0.0 || ^12.0.0",
+        "phpstan/phpstan": "^1.0",
+        "friendsofphp/php-cs-fixer": "^3.0",
+        "guzzlehttp/psr7": "^2.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "IPLocate\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "IPLocate\\Tests\\": "tests/"
+        }
+    },
+    "scripts": {
+        "test": "phpunit",
+        "test-coverage": "phpunit --coverage-html coverage",
+        "phpstan": "phpstan analyse",
+        "cs-fix": "php-cs-fixer fix"
+    },
+    "config": {
+        "sort-packages": true,
+        "allow-plugins": {
+            "composer/package-versions-deprecated": true
+        }
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true
+}
